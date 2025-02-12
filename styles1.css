@@ -318,8 +318,9 @@ nav {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 16rem;
     justify-content: center;
+    width: 50%;
+
 }
 
 .contact-card img {
@@ -330,6 +331,7 @@ nav {
     text-decoration: none;
     color: #a5bfdf;
     font-weight: bold;
+    
 }
 
 /* Footer */
@@ -435,9 +437,11 @@ footer {
     .contact-container {
         flex-direction: column;
     }
+
+    
 }
 
-@media (max-width:320px) {
+@media (max-width:420px) {
     .menu-toggle {
         display: block;
     }
@@ -453,6 +457,11 @@ footer {
         box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
         transform: translateY(-300px);
         transition: transform 0.3s ease-in-out;
-        }    
-    
+        }
+        
+    .contact-card{
+        width: 16rem;
+
+    }    
+   
 }
