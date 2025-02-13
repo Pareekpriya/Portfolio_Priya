@@ -320,11 +320,18 @@ nav {
     text-align: center;
     justify-content: center;
     width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 255, 170, 0.2);
+    transition: transform 0.3s ease-in-out;
 
 }
 
 .contact-card img {
     width: 50px;
+}
+
+.contact-card img:hover {
+    transform: scale(1.05);
+ 
 }
 
 .contact-card a {
