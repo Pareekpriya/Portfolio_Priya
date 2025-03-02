@@ -66,6 +66,14 @@ nav {
     align-items: center;
     height: 90vh;
     text-align: center;
+    padding: 2rem;
+}
+
+.hero-content img {
+    /* max-width: 100%; */
+    height: auto;
+    display: block;
+    margin: 10px auto;
 }
 
 .hero h1 {
@@ -422,7 +430,10 @@ footer {
 
     .hero{
         text-align: center;
-        padding: 50px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2rem;
     }
 
     .hero h1 {
@@ -465,15 +476,19 @@ footer {
         flex-direction: column;
     }
 
-    .hero-content img{
-        padding: 0px 40px;
-        margin: auto;
+     
+    .hero-content img {
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
 
     .contact-card h3 {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+    
 }
 
     
