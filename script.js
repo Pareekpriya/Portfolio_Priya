@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // ======= MOBILE MENU TOGGLE =======
     const menuToggle = document.querySelector(".menu-toggle");
-    const menuContainer = document.querySelector(".menu-container");
     const navLinks = document.querySelector(".nav-links");
 
     menuToggle.addEventListener("click", function () {
@@ -15,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    });
+  
 
     // ======= SMOOTH SCROLLING =======
     const smoothScrollLinks = document.querySelectorAll("a[href^='#']");
@@ -33,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
         });
-
+    });
 
     // ======= BACK TO TOP BUTTON =======
     const scrollTopBtn = document.querySelector(".scroll-top");

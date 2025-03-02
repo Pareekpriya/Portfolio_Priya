@@ -55,8 +55,7 @@ nav {
 
 .menu-toggle{
     display: none;
-    font-size: 28px;
-    cursor: pointer;
+   
 }
 
 /* Hero Section */
@@ -85,6 +84,11 @@ nav {
 
 .social-links {
     margin-top: 20px;
+}
+
+.social-links img{
+    background-color: #ccd6f6;
+    border-radius: 25%;
 }
 
 .social-icon {
@@ -363,6 +367,9 @@ footer {
     width: 100%;
     cursor: pointer;
     transition: transform 0.3s ease;
+    background-color: #ccd6f6;
+    border-radius: 50%;
+
 }
 
 .scroll-top img:hover {
@@ -370,9 +377,13 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    nav {
+@media (max-width: 760px) {
+    /* nav {
         padding: 15px 30px;
+    } */
+
+    html, body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
     .nav-links {
@@ -387,6 +398,7 @@ footer {
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
         padding: 10px 0;
+        z-index: 999;
     }
 
     .nav-links.show {
@@ -402,6 +414,15 @@ footer {
         cursor: pointer;
         font-size: 30px;
         color: #64ffda;
+        position: absolute;
+        right: 20px;
+        z-index: 1100;
+        top: 20px; 
+    }
+
+    .hero{
+        text-align: center;
+        padding: 50px;
     }
 
     .hero h1 {
@@ -416,13 +437,12 @@ footer {
 
     .project-card {
         width: 90%;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 255, 170, 0.2);
     }
 
-    .tools img {
-        width: 40px;
-        height: 40px;
-    }
-
+   
     .git-container {
         flex-direction: column;
         align-items: center;
@@ -445,40 +465,15 @@ footer {
         flex-direction: column;
     }
 
-    
+    .hero-content img{
+        padding: 0px 40px;
+        margin: auto;
+    }
+
+    .contact-card h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
-@media (max-width:420px) {
-    .menu-toggle {
-        display: block;
-    }
-    .menu-container {
-        display: block;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: rgba(10, 25, 47, 0.95);
-        width: 200px;
-        text-align: center;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-        transform: translateY(-300px);
-        transition: transform 0.3s ease-in-out;
-        }
-        
-    .contact-card{
-        width: 16rem;
-
-    }  
     
-    .hero-content{
-        width: 70%;
-    }
-    
-    .hero-content p img {
-        width: 100%;
-        display: flex;
-        align-items: center
-        /* justify-content: center; */
-    }
-}
