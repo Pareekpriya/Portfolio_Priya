@@ -69,13 +69,6 @@ nav {
     padding: 2rem;
 }
 
-/* .hero-content img {
-    width: 100%;
-    max-width: 400px; 
-    height: auto;
-    display: block;
-    /* margin: 10px auto; */
-*/
 
 .typing-container {
     display: flex;
@@ -83,7 +76,9 @@ nav {
     align-items: center; 
     width: 100%;
    text-align: center;
+   overflow: hidden;
 }
+
 
 .typing-text {
     max-width: 100%;  
@@ -101,10 +96,6 @@ nav {
     color: #64ffda;
 }
 
-/* .hero p {
-    font-size: 24px;
-    margin-top: 10px;
-} */
 
 .social-links {
     margin-top: 20px;
@@ -439,7 +430,7 @@ footer {
         font-size: 30px;
         color: #64ffda;
         position: absolute;
-        right: 20px;
+        right: 40px;
         z-index: 1100;
         top: 20px; 
     }
@@ -507,6 +498,7 @@ footer {
 
     .typing-text {
         width: 90%; 
+        min-width: 300px; 
     }
     
 }
