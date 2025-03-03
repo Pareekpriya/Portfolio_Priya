@@ -444,7 +444,10 @@ footer {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        padding: 2rem;
+        width: 100%;
+        max-width: 900px;
+        height: 90vh;
+        /* padding: 2rem; */
     }
 
     .hero h1 {
@@ -493,16 +496,16 @@ footer {
         align-items: center; 
         justify-content: center;
         text-align: center;
-        padding: 5px; 
+        margin: 0 auto;
         width: 100%;  
-        max-width: 100%;
+        max-width: 900px;
     }
 
     .hero-content img {
-        max-width: 90%;
+        /* max-width: 90%; */
         height: auto;
         display: block;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 
     .contact-card h3 {
@@ -510,31 +513,39 @@ footer {
         text-overflow: ellipsis;
     }
 
-    .typing-text {
-        display: inline-block;
+    .typing-container {
+        display: flex;
+        justify-content: center;        
+        align-items: center; 
+        width: 90%; 
+        max-width: 800px; 
         text-align: center;
-        letter-spacing: 0.5px; 
-        word-spacing: 1px; 
+        overflow: hidden;
     }
-            
-}
-
-@media screen and (max-width: 390px) {
-    .hero-content {
-        padding: 0 0;
-    }
-
-    .typing-text {
-        font-family: sans-serif;
-        transform: translateZ(0); 
-        -webkit-font-smoothing: antialiased;
-    }
+      
+   .typing-text {
+    width: 100%; 
+    max-width: 800px; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+  }
 
     .typing-text img {
         padding: 0;
         margin: 0;
     }
 
+            
+}
+
+@media screen and (max-width: 390px) {
+    .hero-content {
+        padding: 0 0;
+        margin: 0 0;
+
+    }
+     
   }
 
 
