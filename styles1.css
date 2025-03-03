@@ -511,12 +511,12 @@ footer {
     }
 
     .typing-text {
-        width: 95%; 
-        min-width: 300px; 
-        white-space: nowrap;
-        overflow: hidden; 
-
+        display: inline-block;
+        text-align: center;
+        letter-spacing: 0.5px; 
+        word-spacing: 1px; 
     }
+    
 
             
 }
