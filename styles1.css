@@ -447,7 +447,7 @@ footer {
         width: 100%;
         max-width: 900px;
         height: 90vh;
-        /* padding: 2rem; */
+        overflow: visible; 
     }
 
     .hero h1 {
@@ -497,17 +497,13 @@ footer {
         justify-content: center;
         text-align: center;
         margin: 0 auto;
-        width: 100%;  
-        max-width: 900px;
+        width: 90%;  
+        max-width: 800px;
+        overflow: visible;
+        min-height: 300px;
     }
 
-    .hero-content img {
-        /* max-width: 90%; */
-        height: auto;
-        display: block;
-        /* margin: 0 auto; */
-    }
-
+  
     .contact-card h3 {
         overflow: hidden;
         text-overflow: ellipsis;
