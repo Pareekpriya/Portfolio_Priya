@@ -79,7 +79,8 @@ nav {
 
 .typing-container {
     display: flex;
-    justify-content: center;  /* Center horizontally */        align-items: center;  /* Center vertically */
+    justify-content: center;        
+    align-items: center; 
     width: 100%;
    text-align: center;
 }
@@ -502,6 +503,10 @@ footer {
     .contact-card h3 {
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    .typing-text {
+        width: 90%; 
     }
     
 }
