@@ -516,8 +516,6 @@ footer {
         letter-spacing: 0.5px; 
         word-spacing: 1px; 
     }
-    
-
             
 }
 
@@ -527,8 +525,9 @@ footer {
     }
 
     .typing-text {
-        width: 100%;
-        font-size: 16px; 
+        font-family: sans-serif;
+        transform: translateZ(0); 
+        -webkit-font-smoothing: antialiased;
     }
 
     .typing-text img {
