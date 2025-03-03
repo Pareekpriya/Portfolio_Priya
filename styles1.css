@@ -70,10 +70,11 @@ nav {
 }
 
 .hero-content img {
-    /* max-width: 100%; */
+    width: 100%;
+    max-width: 400px; 
     height: auto;
     display: block;
-    margin: 10px auto;
+    /* margin: 10px auto; */
 }
 
 .hero h1 {
@@ -85,10 +86,10 @@ nav {
     color: #64ffda;
 }
 
-.hero p {
+/* .hero p {
     font-size: 24px;
     margin-top: 10px;
-}
+} */
 
 .social-links {
     margin-top: 20px;
@@ -478,7 +479,8 @@ footer {
 
      
     .hero-content img {
-        max-width: 100%;
+        width: 100%;
+        max-width: 400px;
         height: auto;
         display: block;
     }
