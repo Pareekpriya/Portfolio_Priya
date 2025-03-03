@@ -517,7 +517,8 @@ footer {
         overflow: hidden; 
 
     }
-    
+
+            
 }
 
 @media screen and (max-width: 390px) {
@@ -528,6 +529,11 @@ footer {
     .typing-text {
         width: 100%;
         font-size: 16px; 
+    }
+
+    .typing-text img {
+        padding: 0;
+        margin: 0;
     }
 
   }
