@@ -144,7 +144,7 @@ nav {
     margin-top: 20px;
 }
 
-.btn {
+#btn {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -156,7 +156,7 @@ nav {
     transition: 0.3s;
 }
 
-.btn:hover {
+#btn:hover {
     background: #52e6c1;
 }
 

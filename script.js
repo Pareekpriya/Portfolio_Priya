@@ -14,6 +14,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+
+
+    // resume download functionality
+    document.querySelectorAll(".resumeLink").forEach(link => {
+        link.addEventListener("click",()=>{
+        
+        // window.open(this.href,"_blank");
+
+        const link = document.createElement('a');
+        link.href = this.href;
+        link.download = "PriyaPareek_Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+});
   
 
     // ======= SMOOTH SCROLLING =======
