@@ -17,20 +17,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // resume download functionality
-    document.querySelectorAll(".resumeLink").forEach(link => {
-        link.addEventListener("click",()=>{
-        
-        // window.open(this.href,"_blank");
 
-        const link = document.createElement('a');
-        link.href = this.href;
-        link.download = "PriyaPareek_Resume.pdf";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+document.querySelectorAll(".resumeLink").forEach(link => {
+    link.addEventListener("click", function (event) {
+        event.preventDefault(); 
+
+        // Open in a new tab
+        window.open(this.href, "_blank");
+
+        // Force download
+        setTimeout(() => {
+            const downloadLink = document.createElement("a");
+            downloadLink.href = this.href;
+            downloadLink.download = "PriyaPareek_Resume.pdf";
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        }, 1000); 
     });
 });
-  
+
 
     // ======= SMOOTH SCROLLING =======
     const smoothScrollLinks = document.querySelectorAll("a[href^='#']");

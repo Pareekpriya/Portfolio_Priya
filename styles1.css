@@ -347,7 +347,17 @@ nav {
 
 .contact-card img {
     width: 50px;
+    box-shadow: 0 4px 8px rgba(0, 10, 7, 0.014);
+    background-color: #ccebf6;
+    padding: 4px;
+    border-radius: 30%;
+    transition: all 0.9s ease-in-out;
 }
+
+/* .contact-card img :nth-child(3){
+    text-shadow: #ccd6f6;
+    
+} */
 
 .contact-card img:hover {
     transform: scale(1.05);
