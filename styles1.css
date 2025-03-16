@@ -127,11 +127,11 @@ nav {
     align-items: center;
     gap: 20px;
 }
+
  
 #about h1{
     font-size: 32px;
     color: #64ffda;
-    margin-bottom: 20px;
 }
 
 #about p{
@@ -139,8 +139,8 @@ nav {
 }
 
 .priya-photo {
-    width: 200px;
-    border-radius: 50%;
+    width: 250px;
+    border-radius: 10%;
     margin-top: 20px;
 }
 
