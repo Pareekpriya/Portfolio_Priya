@@ -120,12 +120,12 @@ nav {
 /* About Section */
 #about {
     text-align: center;
-    padding: 80px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 80px 20px;
 }
 
  
@@ -135,11 +135,12 @@ nav {
 }
 
 #about p{
-    width:70%
+    width:70%;
 }
 
+
 .priya-photo {
-    width: 250px;
+    width: 300px;
     border-radius: 10%;
     margin-top: 20px;
 }
@@ -185,7 +186,7 @@ nav {
 
 .skill {
     text-align: center;
-    /* width: 120px; */
+    gap: 80px;
 }
 
 .skill img {
@@ -210,24 +211,29 @@ nav {
 }
 
 .project-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0; 
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    align-items: center;
+    max-width: 1100px; 
+    place-items: center;
+    margin: auto;
 }
 
 .project-card {
     background: #112240;
     padding: 20px;
-    border-radius: 10px;
-    width: 70%;
+    border-radius: 20px;
     transition: transform 0.3s ease;
     text-align: center;
+    height: auto;
+    width: 500px;
 }
 
 .project-card img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .project-card h2 {
@@ -241,7 +247,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .tools img {
@@ -259,7 +265,6 @@ nav {
 };
 
 .project-links{
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -274,6 +279,7 @@ nav {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    margin-top: 10px;
 }
 
 .project-links button a{
@@ -327,9 +333,6 @@ nav {
 .git-summary img {
     width: 400px;
     height: 200px;
-    /* max-width: 400px; */
-    /* height: auto; */
-    /* object-fit: cover; */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 255, 170, 0.2);
     transition: transform 0.3s ease-in-out;
@@ -366,7 +369,7 @@ nav {
     border-radius: 10px;
     text-align: center;
     justify-content: center;
-    width: 50%;
+    width: 40%;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 255, 170, 0.2);
     transition: transform 0.3s ease-in-out;
@@ -376,19 +379,12 @@ nav {
 .contact-card img {
     width: 40px;
     height: auto;
-    /* filter: invert(1); */
-    /* box-shadow: 0 4px 8px rgba(225, 228, 227, 0.014); */
     background-color: #ccebf6; 
-    /* margin-bottom: 10px; */
-     padding: 8px;
+    padding: 8px;
      border-radius: 30%;
-    /* transition: all 0.9s ease-in-out; */
+    transition: all 0.9s ease-in-out;
 }
 
-/* .contact-card img :nth-child(3){
-    text-shadow: #ccd6f6;
-    
-} */
 
 .contact-card:hover {
     transform: scale(1.05);
@@ -435,10 +431,7 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 760px) {
-    /* nav {
-        padding: 15px 30px;
-    } */
-
+   
     body {
         margin: 0;
         padding: 0;  
@@ -495,10 +488,16 @@ footer {
         font-size: 36px;
     }
 
+   
     .skills-container {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         align-items: center;
+    }
+     
+    .project-container{
+        grid-template-columns: 1fr; 
+        gap: 20px;
     }
 
     .project-card {
@@ -543,7 +542,10 @@ footer {
         overflow: visible;
         min-height: 300px;
     }
-
+    
+    .contact-card{
+        width: 90%;
+    }
   
     .contact-card h3 {
         overflow: hidden;
@@ -555,7 +557,6 @@ footer {
         justify-content: center;        
         align-items: center; 
         width: 100%; 
-        /* max-width: 800px;  */
         text-align: center;
         overflow: hidden;
     }
@@ -584,6 +585,60 @@ footer {
     }
      
   }
+
+@media (min-width:1000px) {
+    #about {
+        max-width: 1000px;
+        margin: auto;
+        text-align: left;
+    }
+    
+      #about h1 {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 40px; 
+       
+      }
+    
+      .about-content {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        gap: 40px;
+        width: 100%;
+        margin: auto;
+     }
+    
+      .priya-photo {
+        width: 350px; 
+      }
+    
+      #about p {
+        width: 100%; 
+        margin: auto;
+        justify-self: center;
+        margin-bottom: 10px;
+      }
+    
+      #btn {
+        display: inline-block;
+        margin-top: 80px;
+        margin: auto;
+    
+      }
+    }
+    
+    /* For Small Screens */
+    @media (max-width: 1024px) {
+      #about p {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
+        padding: 10px;
+      }
+    
+}  
 
 
 

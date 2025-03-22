@@ -57,12 +57,18 @@
       <!-- About Section -->
       <section id="about">
         <h1>About <span>Me</span></h1>
-         <img src="./images/professional photo.jpg" alt="Priya's Photo" class="priya-photo" style="margin-bottom: 1rem;">
-         <p>Frontend developer with expertise in HTML, CSS, JavaScript, React, Redux, and Chakra UI. Experienced in building responsive and user-friendly web applications. Independently developed project, focusing on clean code and performance optimization.</p>
-         <a href="./images/PriyaPareek-FrontendDeveloper(React).pdf" target="_blank" class="resumeLink" id="btn">Resume</a>
         
-    </section>
+        <div class="about-content">
+          <img src="./images/professional photo.jpg" alt="Priya's Photo" class="priya-photo">
+          <div>
+            <p>Frontend developer with expertise in HTML, CSS, JavaScript, React, Redux, and Chakra UI. Experienced in building responsive and user-friendly web applications. Independently developed projects, focusing on clean code and performance optimization.</p>
+            <a href="./images/PriyaPareek-FrontendDeveloper(React).pdf" target="_blank" class="resumeLink" id="btn">Resume</a>
+          </div>
+        </div>
+      </section>
     
+
+               
           <!-- Skills Section -->
           <section id="skills">
             <h1 style="margin-bottom: 1.5rem;">Technical <span>Skills</span></h1>
@@ -109,9 +115,34 @@
     <!-- Projects Section -->
     <section id="project">
         <h1 style="margin-bottom: 2rem;">Project</h1>
+
         <div class="project-container">
             <div class="project-card">
-                <img src="./images/project.png" alt="Project 1">
+                <img src="./images/Screenshot 2025-03-22 134557.png" alt="Project 1">
+                <h2>StoryWeave</h2>
+                <p>StoryWeave - A collaborative short story writing platform where users can create, read, and contribute to stories in real-time. Built using React, Redux, and Chakra UI, with Firebase handling authentication, database management, and deployment. Features include seamless story progression, user attribution, and a responsive, user-friendly interface.</p>
+
+                <div class="tools">
+                    <img src="./images/icon-react.png" alt="React">
+                    <img src="./images/icon-redux.png" alt="Redux">
+                    <img src="./images/icon-chakra-ui.png" alt="CharkraUI">
+                    <img src="./images/firebase-logo.png" alt="CharkraUI">
+                </div>
+
+            <!-- Buttons for Live Demo and GitHub -->
+            <div class="project-links">
+                <button class="btn live-demo">   
+                  <a href="https://story-creator-3b90d.web.app/" target="_blank" >Live Demo</a>
+                </button>
+                <button class="btn github-link">
+                    <a href="https://github.com/Pareekpriya/Collaborative_StoryCreator" target="_blank" >GitHub</a>
+                </button>
+            </div>
+                                    
+           </div>
+
+            <div class="project-card">
+                <img src="./images/project.png" alt="Project 2">
                 <h2>BugBerry</h2>
                 <p>BugBerry is a fully functional e-commerce platform.It enables users to explore various product categories and add items to their cart. The project follows a modern and responsive UI design while integrating frontend and backend functionalities for a seamless shopping experience.</p>
 
@@ -130,9 +161,7 @@
                     <a href="https://github.com/Pareekpriya/BugBerry_fulstack_Project" target="_blank" >GitHub</a>
                 </button>
             </div>
-               <div>
-            </div>
-                      
+               
            </div>
         </div>
     </section>  
