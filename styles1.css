@@ -174,12 +174,11 @@ nav {
 
 .skills-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     justify-content: center;
     align-items: center;
-
 }
 
 .skill {
@@ -633,6 +632,15 @@ footer {
         margin-top: 10px;
         padding: 10px;
       }
+
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    
+    .project-card {
+        width: 90%; /* Reduce the width for better fit */
+    }
     
 }  
 
