@@ -176,9 +176,13 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+    width: 70%;
+    margin: auto;
     justify-content: center;
     align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .skill {
@@ -489,6 +493,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         align-items: center;
+        gap:30px
     }
      
     .project-container{
