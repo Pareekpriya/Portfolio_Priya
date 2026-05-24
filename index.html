@@ -41,7 +41,6 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#project">Projects</a></li>
-                    <li><a href="#statistics">Statistics</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li>
                         <a href="./images/PriyaPareek-DataAnalyst.pdf" target="_blank" class="resumeLink">Resume</a>
@@ -82,51 +81,115 @@
         </div>
     </section>
 
-    <section id="skills">
-        <h1 style="margin-bottom: 1.5rem;">Technical <span>Skills</span></h1>
-        <div class="skills-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 20px; max-width: 950px; margin: 0 auto; padding: 20px;">
-            <div class="skill skill-item">
-                <i class="fa-solid fa-chart-line" style="font-size: 3rem; color: #f2c811;"></i>
-                <p style="margin-top: 10px;">Power BI</p>
-            </div>
-            <div class="skill skill-item">
-                <i class="fa-solid fa-database" style="font-size: 3rem; color: #00758f;"></i>
-                <p style="margin-top: 10px;">SQL</p>
-            </div>
-            <div class="skill skill-item">
-                <i class="fa-brands fa-python" style="font-size: 3rem; color: #3776ab;"></i>
-                <p style="margin-top: 10px;">Python</p>
-            </div>
-            <div class="skill skill-item">
-                <i class="fa-solid fa-table" style="font-size: 3rem; color: #107c41;"></i>
-                <p style="margin-top: 10px;">Advanced Excel</p>
-            </div>
-            <div class="skill skill-item">
-                <i class="fa-solid fa-diagram-project" style="font-size: 3rem; color: #3b82f6;"></i>
-                <p style="margin-top: 10px;">Data Modeling</p>
-            </div>
-            <div class="skill skill-item">
-                <i class="fa-brands fa-github" style="font-size: 3rem; color: #ffffff;"></i>
-                <p style="margin-top: 10px;">GitHub</p>
-            </div>
-             <div class="skill">
-                   <i class="fa-brands fa-vscode" style="font-size: 3rem; color: #ffffff;"></i>
-                    <p>Visual Studio Code</p>
-                </div>
-        </div>
-    </section>
+   <section id="skills" style="padding: 60px 10%; overflow: hidden;">
+    <h1 style="margin-bottom: 2.5rem; text-align: center;">Technical <span>Skills</span></h1>
+    
+    <style>
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .skill-card {
+            background: #112240; 
+            padding: 30px 20px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 140px;
+        }
+        /* Make icons larger and centered */
+        .skill-card i {
+            font-size: 3.5rem !important; 
+            transition: transform 0.3s ease;
+        }
+        /* Hide text completely until hover */
+        .skill-card p {
+            margin-top: 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ccd6f6;
+            opacity: 0;
+            max-height: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease-in-out;
+        }
+        /* Hover States: Lift card up and fade text in */
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 117, 143, 0.2);
+            background: #1d3557;
+        }
+        .skill-card:hover i {
+            transform: scale(1.1);
+        }
+        .skill-card:hover p {
+            opacity: 1;
+            max-height: 40px;
+            transform: translateY(0);
+        }
+    </style>
 
-    <section id="project" style="padding: 60px 20px;">
-        <h1 style="margin-bottom: 2rem; text-align: center;">Featured Projects</h1>
-        <div class="project-list-wrapper" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-            
-            <div class="project-card data-project-card" style="width: 100%; max-width: 950px; margin: 0 auto 50px auto; display: block; text-align: left; box-sizing: border-box;">
-                <h2 style="color: #64ffda;">Business Insights 360 — Atliq Hardware</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <i class="fa-solid fa-chart-line" style="color: #f2c811;"></i>
+            <p>Power BI</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-solid fa-database" style="color: #00758f;"></i>
+            <p>SQL</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-brands fa-python" style="color: #3776ab;"></i>
+            <p>Python</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-solid fa-table" style="color: #107c41;"></i>
+            <p>Advanced Excel</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-solid fa-diagram-project" style="color: #3b82f6;"></i>
+            <p>Data Modeling</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+            <p>GitHub</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-brands fa-square-js" style="color: #007acc;"></i> 
+            <p>Visual Studio Code</p>
+        </div>
+    </div>
+</section>
+
+   <section id="project" style="padding: 60px 10%; overflow: hidden;">
+    <h1 style="margin-bottom: 2rem; text-align: center;">Featured <span>Projects</span></h1>
+    
+    <div class="project-container" style="max-width: 1100px; margin: 0 auto;">
+        <div class="project-header" style="background: linear-gradient(135deg, #0f172a, #1e293b); padding: 18px 25px; border-radius: 8px; border-left: 5px solid #00758f; margin-bottom: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+            <h2 style="color: #64ffda; font-size: 1.6rem; margin: 0; font-family: 'Fira Code', monospace; font-weight: 600; letter-spacing: 0.5px;">
+                Business Insights 360 — Atliq Hardware
+            </h2>
+            </div>
                 <p style="margin-top: 10px; color: #ccd6f6; line-height: 1.6;">An enterprise-grade, interactive business intelligence suite designed to monitor global operations, dissolve structural data silos, and track core KPIs across multiple departmental verticals.</p>
                 
-                <div class="bi-dashboard-frame" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 25px 0; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); border: 1px solid #233554;">
-                    <iframe title="Bi360" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://app.powerbi.com/view?r=eyJrIjoiN2ExMTA0MjAtYmFmMS00NTVlLWE2MGYtZGRjMzNkODAzOGQxIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
+              <div class="report-wrapper" style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin-bottom: 30px;">
+            <iframe 
+                title="Business Insights 360 - Atliq Hardware" 
+                src="https://app.powerbi.com/view?r=eyJrIjoiN2I0YzczYjYtYmQ0YS00MDY2LTk3YTYtNzNlMDlhMzg1M2YxIiwidCI6ImM2ZTU0OWIzLTg2YTYtNDI3My1iODIwLTQzM2VjODQ4MDczYiJ9" 
+                allowFullScreen="true"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+            </iframe>
+        </div>
 
                 <div class="project-highlights" style="margin: 25px 0; background: rgba(10, 25, 47, 0.4); padding: 20px; border-radius: 8px; border-left: 3px solid #64ffda;">
                     <h4 style="color: #ccd6f6; margin-bottom: 15px; font-size: 1.2rem;">📝 Project Case Study</h4>
@@ -146,8 +209,7 @@
                         <a href="https://github.com/Pareekpriya/Bussiness_Insight360_PowerBI" target="_blank" style="color: #64ffda; display: block; width: 100%;">GitHub Repository</a>
                     </button>
                 </div>
-            </div>
-         
+                     
 
         </div>
     </section>
