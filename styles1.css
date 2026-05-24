@@ -1,13 +1,3 @@
-/* =========================================
-   GOOGLE FONT
-========================================= */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
-/* =========================================
-   RESET
-========================================= */
-
 *{
     margin:0;
     padding:0;
@@ -16,415 +6,264 @@
     scroll-behavior:smooth;
 }
 
-html{
-    overflow-x:hidden;
-}
-
 body{
     background:#0a192f;
-    color:#ccd6
-        line-height:1.7;
+    color:#ccd6f6;
     overflow-x:hidden;
-    position:relative;
 }
 
-/* =========================================
-   ANIMATED BACKGROUND
-========================================= */
-
-body::before{
-    content:"";
-    position:fixed;
-    top:-200px;
-    left:-200px;
-    width:500px;
-    height:500px;
-    background:radial-gradient(circle,#64ffda22,transparent 70%);
-    animation:float1 12s ease-in-out infinite;
-    pointer-events:none;
-    z-index:-2;
-}
-
-body::after{
-    content:"";
-    position:fixed;
-    right:-200px;
-    bottom:-200px;
-    width:500px;
-    height:500px;
-    background:radial-gradient(circle,#3b82f622,transparent 70%);
-    animation:float2 15s ease-in-out infinite;
-    pointer-events:none;
-    z-index:-2;
-}
-
-@keyframes float1{
-    0%,100%{transform:translate(0,0);}
-    50%{transform:translate(80px,60px);}
-}
-
-@keyframes float2{
-    0%,100%{transform:translate(0,0);}
-    50%{transform:translate(-100px,-80px);}
-}
-
-/* =========================================
-   NAVBAR
-========================================= */
+/* NAVBAR */
 
 nav{
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:1000;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
-
-    padding:18px 60px;
-
-    backdrop-filter:blur(18px);
-    background:rgba(10,25,47,.85);
-
-    border-bottom:1px solid rgba(255,255,255,.08);
+    padding:20px 50px;
+    background:rgba(10,25,47,0.95);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
 }
 
 .logo{
+    font-size:30px;
+    font-weight:bold;
     color:#64ffda;
-    font-size:32px;
-    font-weight:800;
-    letter-spacing:1px;
 }
 
 .nav-links{
-    list-style:none;
     display:flex;
-    gap:28px;
+    list-style:none;
+}
+
+.nav-links li{
+    margin:0 15px;
 }
 
 .nav-links a{
     color:#ccd6f6;
     text-decoration:none;
-    font-weight:500;
-    transition:.3s;
-    position:relative;
-}
-
-.nav-links a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-6px;
-    width:0;
-    height:2px;
-    background:#64ffda;
-    transition:.3s;
+    transition:0.3s;
 }
 
 .nav-links a:hover{
     color:#64ffda;
 }
 
-.nav-links a:hover::after{
-    width:100%;
-}
-
 .menu-toggle{
     display:none;
 }
 
-/* =========================================
-   HERO
-========================================= */
+/* HERO */
 
 .hero{
-    min-height:100vh;
-
+    height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-
     text-align:center;
-    padding:40px 20px;
-}
-
-.hero-content{
-    animation:fadeUp 1s ease;
+    padding:20px;
 }
 
 .hero h1{
-    font-size:62px;
-    font-weight:800;
-    margin-bottom:20px;
+    font-size:55px;
 }
 
-.hero span{
+.hero h1 span{
     color:#64ffda;
 }
 
 .typing-container{
-    margin-top:10px;
+    margin-top:20px;
 }
 
 .typing-text{
-    max-width:100%;
+    width:100%;
+    max-width:550px;
 }
 
 .social-links{
-    margin-top:40px;
+    margin-top:30px;
 }
 
 .social-icon{
     width:55px;
-    margin:0 10px;
-
+    margin:10px;
     background:#ccd6f6;
-    padding:8px;
-    border-radius:14px;
-
-    transition:.35s;
+    border-radius:12px;
+    transition:0.3s;
 }
 
 .social-icon:hover{
-    transform:translateY(-8px) scale(1.08);
-    box-shadow:0 10px 25px rgba(100,255,218,.25);
+    transform:scale(1.1);
 }
 
-/* =========================================
-   SECTION COMMON
-========================================= */
-
-section{
-    position:relative;
-}
-
-section h1{
-    text-align:center;
-    font-size:42px;
-    margin-bottom:60px;
-    font-weight:700;
-}
-
-section h1 span{
-    color:#64ffda;
-}
-
-/* =========================================
-   ABOUT
-========================================= */
+/* ABOUT */
 
 #about{
-    max-width:1100px;
+    padding:80px 20px;
+    max-width:1000px;
     margin:auto;
-    padding:100px 20px;
+}
+
+#about h1{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:50px;
+    color:#64ffda;
 }
 
 .about-content{
     display:flex;
+    gap:40px;
     align-items:center;
-    gap:50px;
 }
 
 .priya-photo{
-    width:330px;
-    border-radius:25px;
-
-    box-shadow:
-    0 0 0 3px rgba(100,255,218,.25),
-    0 15px 40px rgba(0,0,0,.35);
-
-    transition:.4s;
-}
-
-.priya-photo:hover{
-    transform:translateY(-8px);
+    width:320px;
+    border-radius:20px;
 }
 
 #about p{
-    font-size:1rem;
-    color:#c4d3f0;
+    line-height:1.8;
 }
 
 .resume-btn{
     display:inline-block;
-
-    margin-top:30px;
-
-    padding:14px 28px;
-
-    text-decoration:none;
-    color:#0a192f;
-
+    margin-top:25px;
     background:#64ffda;
-
-    border-radius:10px;
-
-    font-weight:700;
-
-    transition:.3s;
+    color:#0a192f;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
 }
 
 .resume-btn:hover{
-    transform:translateY(-4px);
-    box-shadow:0 10px 25px rgba(100,255,218,.25);
+    background:#52e6c1;
 }
-/* =========================================
-   SKILLS
-========================================= */
+
+/* SKILLS */
 
 #skills{
-    max-width:1100px;
-    margin:auto;
-    padding:100px 20px;
+    padding:80px 20px;
+}
+
+#skills h1{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:50px;
+    color:#64ffda;
 }
 
 .skills-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
     gap:25px;
+    max-width:1000px;
+    margin:auto;
 }
 
 .skill-card{
-    background:rgba(17,34,64,.8);
-    backdrop-filter:blur(10px);
-
-    border:1px solid rgba(255,255,255,.05);
-
-    border-radius:20px;
-
-    min-height:180px;
+    background:#112240;
+    border-radius:15px;
+    padding:30px 20px;
+    min-height:170px;
 
     display:flex;
     flex-direction:column;
-    align-items:center;
     justify-content:center;
+    align-items:center;
 
-    transition:.4s;
-    cursor:pointer;
+    transition:0.3s;
 }
 
 .skill-card:hover{
-    transform:translateY(-10px);
-
-    border-color:#64ffda;
-
-    box-shadow:
-    0 10px 30px rgba(100,255,218,.15);
+    transform:translateY(-8px);
+    background:#1d3557;
 }
 
 .skill-card i{
-    font-size:60px;
-    margin-bottom:15px;
-    transition:.3s;
-}
-
-.skill-card:hover i{
-    transform:scale(1.15);
+    font-size:55px;
 }
 
 .skill-img{
-    width:60px;
-    height:60px;
+    width:55px;
+    height:55px;
     object-fit:contain;
-    margin-bottom:15px;
-    transition:.3s;
-}
-
-.skill-card:hover .skill-img{
-    transform:scale(1.15);
 }
 
 .skill-card p{
+    margin-top:20px;
     font-weight:600;
-    text-align:center;
 }
 
-/* =========================================
-   PROJECT SECTION
-========================================= */
+/* PROJECT */
 
 #project{
-    max-width:1100px;
-    margin:auto;
-    padding:100px 20px;
+    padding:80px 20px;
+}
+
+#project h1{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:50px;
+    color:#64ffda;
 }
 
 .project-container{
+    max-width:1000px;
+    margin:auto;
     display:flex;
     flex-direction:column;
     gap:30px;
 }
 
 .project-header{
-    background:
-    linear-gradient(
-    135deg,
-    rgba(17,34,64,.95),
-    rgba(25,45,75,.95));
-
-    padding:35px;
-
-    border-radius:20px;
-
-    border-left:5px solid #64ffda;
-
-    box-shadow:
-    0 10px 30px rgba(0,0,0,.25);
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    padding:30px;
+    border-radius:15px;
+    border-left:5px solid #00758f;
 }
 
 .project-header h2{
-    color:#64ffda;
+    color:#e2e8f0;
     font-size:32px;
     margin-bottom:15px;
-    font-weight:700;
 }
 
 .project-header p{
-    color:#c9d6f5;
     line-height:1.8;
 }
 
-/* POWER BI REPORT */
-
 .report-wrapper{
+    position:relative;
     width:100%;
-    height:900px;
-
-    border-radius:20px;
+    padding-bottom:56.25%;
+    border-radius:15px;
     overflow:hidden;
-
-    box-shadow:
-    0 15px 35px rgba(0,0,0,.35);
-
-    background:#112240;
 }
 
 .report-wrapper iframe{
+    position:absolute;
     width:100%;
     height:100%;
     border:none;
 }
 
-/* CASE STUDY */
-
 .project-highlights{
-    background:rgba(17,34,64,.85);
-
-    border-radius:20px;
-
-    padding:35px;
-
-    border-left:5px solid #64ffda;
-
-    backdrop-filter:blur(10px);
+    background:#112240;
+    padding:30px;
+    border-radius:15px;
+    border-left:4px solid #64ffda;
 }
 
 .project-highlights h4{
-    color:#64ffda;
-    font-size:26px;
-    margin-bottom:25px;
+    margin-bottom:20px;
+    font-size:24px;
 }
 
 .project-highlights ul{
@@ -432,66 +271,65 @@ section h1 span{
 }
 
 .project-highlights li{
-    margin-bottom:20px;
-    line-height:1.9;
-    color:#c9d6f5;
+    margin-bottom:18px;
+    line-height:1.8;
 }
 
 .project-highlights strong{
     color:#64ffda;
 }
 
-/* PROJECT BUTTONS */
-
 .project-links{
     display:flex;
-    justify-content:center;
     gap:20px;
+    justify-content:center;
     flex-wrap:wrap;
 }
 
 .project-links button{
-    padding:15px 30px;
-    border-radius:12px;
+    padding:14px 28px;
+    border:none;
+    border-radius:10px;
     cursor:pointer;
-    transition:.3s;
-}
-
-.project-links button:hover{
-    transform:translateY(-6px);
+    transition:0.3s;
 }
 
 .live-demo{
     background:#64ffda;
-    border:none;
 }
 
 .live-demo a{
-    text-decoration:none;
     color:#0a192f;
-    font-weight:700;
+    text-decoration:none;
+    font-weight:bold;
 }
 
 .github-link{
     background:transparent;
-    border:2px solid #64ffda;
+    border:1px solid #64ffda !important;
 }
 
 .github-link a{
-    text-decoration:none;
     color:#64ffda;
-    font-weight:700;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-/* =========================================
-   CONTACT
-========================================= */
+.project-links button:hover{
+    transform:translateY(-5px);
+}
+
+/* CONTACT */
 
 #contact{
-    max-width:1100px;
-    margin:auto;
-    padding:100px 20px;
+    padding:80px 20px;
     text-align:center;
+}
+
+#contact h1{
+    font-size:36px;
+    margin-bottom:40px;
+    color:#64ffda;
 }
 
 .contact-container{
@@ -503,125 +341,49 @@ section h1 span{
 
 .contact-card{
     width:100%;
-    max-width:650px;
-
-    background:
-    rgba(17,34,64,.85);
-
-    border-radius:18px;
-
-    padding:30px;
-
-    transition:.35s;
-
-    border:1px solid rgba(255,255,255,.05);
+    max-width:500px;
+    background:#112240;
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
 }
 
 .contact-card:hover{
-    transform:translateY(-8px);
-
-    border-color:#64ffda;
-
-    box-shadow:
-    0 10px 30px rgba(100,255,218,.15);
-}
-
-.contact-card img{
-    width:50px;
-    padding:10px;
-    border-radius:12px;
-    background:#ccd6f6;
-    margin-bottom:15px;
-}
-
-.contact-card h3{
-    color:#ccd6f6;
-}
-
-.contact-card a{
-    text-decoration:none;
-}
-
-/* =========================================
-   FOOTER
-========================================= */
-
-footer{
-    margin-top:40px;
-
-    text-align:center;
-
-    padding:25px;
-
-    background:#112240;
-
-    color:#ccd6f6;
-}
-
-/* =========================================
-   SCROLL TOP BUTTON
-========================================= */
-
-.scroll-top{
-    position:fixed;
-    right:25px;
-    bottom:25px;
-
-    width:50px;
-    height:50px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    background:#64ffda;
-    color:#0a192f;
-
-    border-radius:50%;
-
-    text-decoration:none;
-
-    box-shadow:
-    0 10px 25px rgba(100,255,218,.3);
-
-    z-index:999;
-
-    transition:.3s;
-}
-
-.scroll-top:hover{
     transform:translateY(-5px);
 }
 
-/* =========================================
-   ANIMATIONS
-========================================= */
-
-@keyframes fadeUp{
-
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
+.contact-card img{
+    width:45px;
+    margin-bottom:15px;
+    background:#ccd6f6;
+    padding:8px;
+    border-radius:10px;
 }
 
-#about,
-#skills,
-#project,
-#contact{
-    animation:fadeUp .8s ease;
+.contact-card a{
+    color:#ccd6f6;
+    text-decoration:none;
 }
 
-/* =========================================
-   RESPONSIVE
-========================================= */
+/* FOOTER */
 
-@media(max-width:992px){
+footer{
+    text-align:center;
+    padding:20px;
+    background:#112240;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    nav{
+        padding:20px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
 
     .about-content{
         flex-direction:column;
@@ -629,55 +391,11 @@ footer{
     }
 
     .priya-photo{
-        width:280px;
+        width:250px;
     }
 
-    .hero h1{
-        font-size:48px;
-    }
-
-    .report-wrapper{
-        height:700px;
-    }
-}
-
-@media(max-width:768px){
-
-    nav{
-        padding:18px 25px;
-    }
-
-    .menu-toggle{
-        display:block;
-        color:#64ffda;
-        font-size:30px;
-        cursor:pointer;
-    }
-
-    .nav-links{
-        display:none;
-
-        position:absolute;
-        top:75px;
-        right:20px;
-
-        width:220px;
-
-        flex-direction:column;
-
-        padding:20px;
-
-        background:#112240;
-
-        border-radius:15px;
-    }
-
-    .nav-links.show{
-        display:flex;
-    }
-
-    .hero h1{
-        font-size:38px;
+    .skills-grid{
+        grid-template-columns:repeat(2,1fr);
     }
 
     .project-header h2{
@@ -691,37 +409,8 @@ footer{
 
     .project-links button{
         width:100%;
-        max-width:320px;
+        max-width:300px;
     }
 
-    .report-wrapper{
-        height:550px;
-    }
-
-    .skills-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
 }
-
-@media(max-width:480px){
-
-    .hero h1{
-        font-size:30px;
-    }
-
-    .skills-grid{
-        grid-template-columns:1fr;
-    }
-
-    .project-header{
-        padding:25px;
-    }
-
-    .project-highlights{
-        padding:25px;
-    }
-
-    .report-wrapper{
-        height:500px;
-    }
-}
+this is my current css file
