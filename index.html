@@ -1,254 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Priya Pareek | Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="./styles1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Interactive Hover and Alignment Overrides for Skills */
-        .skill-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-        .skill-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
-            background: rgba(255, 255, 255, 0.05);
-        }
-        /* STAR Methodology Text Enhancements */
-        .star-section strong {
-            color: #64ffda;
-            display: inline-block;
-            min-width: 90px;
-        }
-    </style>
+
+    <link rel="stylesheet" href="./styles1.css" />
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 </head>
+
 <body>
+
+    <!-- NAVBAR -->
     <header>
         <nav>
+
             <div class="logo">Priya</div>
+
             <div class="menu-container">
                 <ul class="nav-links">
+
                     <li><a href="#home">Home</a></li>
+
                     <li><a href="#about">About</a></li>
+
                     <li><a href="#skills">Skills</a></li>
+
                     <li><a href="#project">Projects</a></li>
+
                     <li><a href="#contact">Contact</a></li>
+
                     <li>
-                        <a href="./images/PriyaPareek-DataAnalyst.pdf" target="_blank" class="resumeLink">Resume</a>
+                        <a href="./images/PriyaPareek-DataAnalyst.pdf"
+                            target="_blank"
+                            class="resumeLink">
+                            Resume
+                        </a>
                     </li>
+
                 </ul>
             </div>
-            <div class="menu-toggle">&#9776</div>
+
+            <div class="menu-toggle">&#9776;</div>
+
         </nav>
     </header>
 
+    <!-- HERO -->
     <section id="home" class="hero">
+
         <div class="hero-content">
-            <h1>Hi, I'm <span>Priya Pareek</span></h1>
-            <br>
+
+            <h1>
+                Hi, I'm <span>Priya Pareek</span>
+            </h1>
+
             <div class="typing-container">
-                <img class="typing-text" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=24&center=true&width=550&pause=1000&color=ccd6f6&lines=Data+Analyst+📊🔍;Building+BI+Solutions+🚀;Data-Driven+Problem+Solver+💡" alt="Typing Animation">
+
+                <img
+                    class="typing-text"
+                    src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=24&center=true&width=550&pause=1000&color=ccd6f6&lines=Data+Analyst+📊🔍;Building+BI+Solutions+🚀;Data-Driven+Problem+Solver+💡"
+                    alt="Typing Animation"
+                />
+
             </div>
+
         </div>
-        <br>
-        <div class="social-links" style="height: 60px;">
+
+        <div class="social-links">
+
             <a href="https://github.com/Pareekpriya" target="_blank">
-                <img src="./images/icons8-github.png" alt="GitHub" class="social-icon" style="width: 50px;">
+                <img
+                    src="./images/icons8-github.png"
+                    alt="GitHub"
+                    class="social-icon"
+                />
             </a>
-            <a href="https://www.linkedin.com/in/priya-pareek-9a4291245/" target="_blank">
-                <img src="./images/icons8-linkedin.png" alt="LinkedIn" class="social-icon" style="width: 50px;">
+
+            <a href="https://www.linkedin.com/in/priya-pareek-9a4291245/"
+                target="_blank">
+                <img
+                    src="./images/icons8-linkedin.png"
+                    alt="LinkedIn"
+                    class="social-icon"
+                />
             </a>
+
         </div>
+
     </section>
 
+    <!-- ABOUT -->
     <section id="about">
+
         <h1>About <span>Me</span></h1>
+
         <div class="about-content">
-            <img src="./images/portfolio_photo.png" alt="Priya's Photo" class="priya-photo">
+
+            <img
+                src="./images/portfolio_photo.png"
+                alt="Priya"
+                class="priya-photo"
+            />
+
             <div>
-                <p>Dynamic and detail-oriented Data Analyst with a solid foundation in business intelligence, automated data pipelines, and quantitative modeling. Proficient in transforming messy enterprise datasets into clean, actionable data schemas to optimize organizational growth. Skilled in building robust relational data architectures, executing advanced analytics using DAX and SQL, writing analytical scripts in Python, and designing high-impact interactive dashboards that empower corporate executives to scale operations and track cross-departmental KPIs.</p>
-                <a href="./images/PriyaPareek-DataAnalyst.pdf" target="_blank" class="resumeLink" id="btn">Resume</a>
-            </div>
-        </div>
-    </section>
 
-   <section id="skills" style="padding: 60px 10%; overflow: hidden;">
-    <h1 style="margin-bottom: 2.5rem; text-align: center;">Technical <span>Skills</span></h1>
-    
-    <style>
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 25px;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px 0;
-        }
-        .skill-card {
-            background: #112240; 
-            padding: 30px 20px;
-            border-radius: 12px;
-            text-align: center;
-            transition: all 0.3s ease-in-out;
-            cursor: pointer;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 140px;
-        }
-        /* Make icons larger and centered */
-        .skill-card i {
-            font-size: 3.5rem !important; 
-            transition: transform 0.3s ease;
-        }
-        /* Hide text completely until hover */
-        .skill-card p {
-            margin-top: 15px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #ccd6f6;
-            opacity: 0;
-            max-height: 0;
-            transform: translateY(10px);
-            transition: all 0.3s ease-in-out;
-        }
-        /* Hover States: Lift card up and fade text in */
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 117, 143, 0.2);
-            background: #1d3557;
-        }
-        .skill-card:hover i {
-            transform: scale(1.1);
-        }
-        .skill-card:hover p {
-            opacity: 1;
-            max-height: 40px;
-            transform: translateY(0);
-        }
-    </style>
+                <p>
+                    Dynamic and detail-oriented Data Analyst with a solid foundation
+                    in business intelligence, automated data pipelines, and
+                    quantitative modeling. Proficient in transforming messy enterprise
+                    datasets into clean, actionable data schemas to optimize
+                    organizational growth. Skilled in building robust relational data
+                    architectures, executing advanced analytics using DAX and SQL,
+                    writing analytical scripts in Python, and designing high-impact
+                    interactive dashboards that empower corporate executives to scale
+                    operations and track cross-departmental KPIs.
+                </p>
 
-    <div class="skills-grid">
-        <div class="skill-card">
-            <i class="fa-solid fa-chart-line" style="color: #f2c811;"></i>
-            <p>Power BI</p>
-        </div>
-        <div class="skill-card">
-            <i class="fa-solid fa-database" style="color: #00758f;"></i>
-            <p>SQL</p>
-        </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-python" style="color: #3776ab;"></i>
-            <p>Python</p>
-        </div>
-        <div class="skill-card">
-            <i class="fa-solid fa-table" style="color: #107c41;"></i>
-            <p>Advanced Excel</p>
-        </div>
-        <div class="skill-card">
-            <i class="fa-solid fa-diagram-project" style="color: #3b82f6;"></i>
-            <p>Data Modeling</p>
-        </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-github" style="color: #ffffff;"></i>
-            <p>GitHub</p>
-        </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-square-js" style="color: #007acc;"></i> 
-            <p>Visual Studio Code</p>
-        </div>
-    </div>
-</section>
+                <a
+                    href="./images/PriyaPareek-DataAnalyst.pdf"
+                    target="_blank"
+                    class="resume-btn">
 
-   <section id="project" style="padding: 60px 10%; overflow: hidden;">
-    <h1 style="margin-bottom: 2rem; text-align: center;">Featured <span>Projects</span></h1>
-    
-    <div class="project-container" style="max-width: 1100px; margin: 0 auto;">
-        <div class="project-header" style="background: linear-gradient(135deg, #0f172a, #1e293b); padding: 18px 25px; border-radius: 8px; border-left: 5px solid #00758f; margin-bottom: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-            <h2 style="color: #64ffda; font-size: 1.6rem; margin: 0; font-family: 'Fira Code', monospace; font-weight: 600; letter-spacing: 0.5px;">
-                Business Insights 360 — Atliq Hardware
-            </h2>
-            </div>
-                <p style="margin-top: 10px; color: #ccd6f6; line-height: 1.6;">An enterprise-grade, interactive business intelligence suite designed to monitor global operations, dissolve structural data silos, and track core KPIs across multiple departmental verticals.</p>
-                
-              <div class="report-wrapper" style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin-bottom: 30px;">
-            <iframe 
-                title="Business Insights 360 - Atliq Hardware" 
-                src="https://app.powerbi.com/view?r=eyJrIjoiN2I0YzczYjYtYmQ0YS00MDY2LTk3YTYtNzNlMDlhMzg1M2YxIiwidCI6ImM2ZTU0OWIzLTg2YTYtNDI3My1iODIwLTQzM2VjODQ4MDczYiJ9" 
-                allowFullScreen="true"
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
-            </iframe>
-        </div>
+                    Resume
 
-                <div class="project-highlights" style="margin: 25px 0; background: rgba(10, 25, 47, 0.4); padding: 20px; border-radius: 8px; border-left: 3px solid #64ffda;">
-                    <h4 style="color: #ccd6f6; margin-bottom: 15px; font-size: 1.2rem;">📝 Project Case Study</h4>
-                    <ul style="list-style: none; padding-left: 0; color: #a8b2d1; line-height: 1.7;">
-                        <li style="margin-bottom: 12px;"><strong style="color: #64ffda;">SITUATION:</strong> Atliq Hardware faced major operational inefficiencies and blind spots because data was heavily siloed across separate departmental platforms.</li>
-                        <li style="margin-bottom: 12px;"><strong style="color: #64ffda;">TASK:</strong> To design and deploy a centralized, high-performance 360° business intelligence platform tracking key performance indicators across Finance, Sales, Marketing, and Supply Chain structures.</li>
-                        <li style="margin-bottom: 12px;"><strong style="color: #64ffda;">APPROACH:</strong> Ingested millions of rows of transaction records into an optimized star schema data model. Wrote complex DAX measures to calculate performance indicators, configured automated responsive tooltips for customer analytics, and built dynamic parameter selection toggles.</li>
-                        <li style="margin-bottom: 5px;"><strong style="color: #64ffda;">RESULT:</strong> Delivered an interactive C-Suite executive control application tracking metrics like Net Sales, Gross Margin %, Forecast Accuracy, and operational risks—instantly pointing out high-growth market opportunities.</li>
-                    </ul>
-                </div>
-
-                <div class="project-links" style="display: flex; gap: 15px; margin-top: 25px;">
-                    <button class="btn live-demo" style="flex: 1; max-width: 220px; text-align: center;">
-                        <a href="https://app.powerbi.com/view?r=eyJrIjoiN2ExMTA0MjAtYmFmMS00NTVlLWE2MGYtZGRjMzNkODAzOGQxIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" target="_blank" style="display: block; width: 100%;">Live Report View</a>
-                    </button>
-                    <button class="btn github-link" style="flex: 1; max-width: 220px; background: transparent; border: 1px solid #64ffda; text-align: center;">
-                        <a href="https://github.com/Pareekpriya/Bussiness_Insight360_PowerBI" target="_blank" style="color: #64ffda; display: block; width: 100%;">GitHub Repository</a>
-                    </button>
-                </div>
-                     
-
-        </div>
-    </section>
-
-    <section id="contact">
-        <h1>Contact <span>Me</span></h1>
-        <div class="contact-container">
-            <div class="contact-card">
-                <img src="./images/icon-call.png" alt="Call">
-                <h3>+91 8769975382</h3>
-            </div>
-            <div class="contact-card">
-                <img src="./images/icon-location.png" alt="Location">
-                <h3>Hyderabad, Telangana</h3>
-            </div>
-            <div class="contact-card">
-                <a href="mailto:pareekp.tech@gmail.com">
-                    <img src="./images/email-icon.png" alt="Email">
-                    <h3>pareekp.tech@gmail.com</h3>
                 </a>
+
             </div>
+
         </div>
-         <div class="social-links" style="height: 60px; margin-top: 15px; display: inline-block;">
-            <a href="https://www.linkedin.com/in/priya-pareek-9a4291245/" target="_blank">
-                <img src="./images/icons8-linkedin.png" alt="LinkedIn" class="social-icon" style="width: 50px;">
-            </a>
-            <a href="https://github.com/Pareekpriya" target="_blank">
-                <img src="./images/icons8-github.png" alt="GitHub" class="social-icon" style="width: 50px; display: inline-block;">
-            </a>
-        </div>
+
     </section>
 
+    <!-- SKILLS -->
+    <section id="skills">
+
+        <h1>Technical <span>Skills</span></h1>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <i class="fa-solid fa-chart-line" style="color:#f2c811;"></i>
+                <p>Power BI</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-database" style="color:#00758f;"></i>
+                <p>SQL</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-python" style="color:#3776ab;"></i>
+                <p>Python</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-table" style="color:#107c41;"></i>
+                <p>Advanced Excel</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-diagram-project" style="color:#3b82f6;"></i>
+                <p>Data Modeling</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-github" style="color:#ffffff;"></i>
+                <p>GitHub</p>
+            </div>
+
+            <div class="skill-card">
+
+                <img
+                    src="./images/vscode.png"
+                    alt="VS Code"
+                    class="skill-img"
+                />
+
+                <p>Visual Studio Code</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECT -->
+    <section id="project">
+
+        <h1>Featured <span>Projects</span></h1>
+
+        <div class="project-container">
+
+            <div class="project-header">
+
+                <h2>
+                    Business Insights 360 — Atliq Hardware
+                </h2>
+
+                <p>
+                    An enterprise-grade, interactive business intelligence suite
+                    designed to monitor global operations, dissolve structural data
+                    silos, and track core KPIs across multiple departmental verticals.
+                </p>
+
+            </div>
+
+            <!-- POWER BI -->
+            <div class="report-wrapper">
+
+                <iframe
+                    title="Business Insights 360 - Atliq Hardware"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiN2I0YzczYjYtYmQ0YS00MDY2LTk3YTYtNzNlMDlhMzg1M2YxIiwidCI6ImM2ZTU0OWIzLTg2YTYtNDI3My1iODIwLTQzM2VjODQ4MDczYiJ9"
+                    allowfullscreen="true">
+                </iframe>
+
+            </div>
+
+            <!-- CASE STUDY -->
+            <div class="project-highlights">
+
+                <h4>📝 Project Case Study</h4>
+
+                <ul>
+
+                    <li>
+                        <strong>SITUATION:</strong>
+                        Atliq Hardware faced major operational inefficiencies and
+                        blind spots because data was heavily siloed across separate
+                        departmental platforms.
+                    </li>
+
+                    <li>
+                        <strong>TASK:</strong>
+                        To design and deploy a centralized, high-performance 360°
+                        business intelligence platform tracking key performance
+                        indicators across Finance, Sales, Marketing, and Supply
+                        Chain structures.
+                    </li>
+
+                    <li>
+                        <strong>APPROACH:</strong>
+                        Ingested millions of rows of transaction records into an
+                        optimized star schema data model. Wrote complex DAX measures
+                        to calculate performance indicators, configured automated
+                        responsive tooltips for customer analytics, and built dynamic
+                        parameter selection toggles.
+                    </li>
+
+                    <li>
+                        <strong>RESULT:</strong>
+                        Delivered an interactive C-Suite executive control
+                        application tracking metrics like Net Sales, Gross Margin %,
+                        Forecast Accuracy, and operational risks—instantly pointing
+                        out high-growth market opportunities.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="project-links">
+
+                <button class="live-demo">
+
+                    <a
+                        href="https://app.powerbi.com/view?r=eyJrIjoiN2ExMTA0MjAtYmFmMS00NTVlLWE2MGYtZGRjMzNkODAzOGQxIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9"
+                        target="_blank">
+
+                        Live Report View
+
+                    </a>
+
+                </button>
+
+                <button class="github-link">
+
+                    <a
+                        href="https://github.com/Pareekpriya/Bussiness_Insight360_PowerBI"
+                        target="_blank">
+
+                        GitHub Repository
+
+                    </a>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <h1>Contact <span>Me</span></h1>
+
+        <div class="contact-container">
+
+            <div class="contact-card">
+
+                <img src="./images/icon-call.png" alt="Call">
+
+                <h3>+91 8769975382</h3>
+
+            </div>
+
+            <div class="contact-card">
+
+                <img src="./images/icon-location.png" alt="Location">
+
+                <h3>Hyderabad, Telangana</h3>
+
+            </div>
+
+            <div class="contact-card">
+
+                <a href="mailto:pareekp.tech@gmail.com">
+
+                    <img src="./images/email-icon.png" alt="Email">
+
+                    <h3>pareekp.tech@gmail.com</h3>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
     <footer>
+
         <p>Thank you!!</p>
+
     </footer>
-    <a href="#home" class="scroll-top">
-        <img src="./images/icons-arrow-up.png" alt="Scroll to Top">
-    </a>
 
     <script src="./script.js"></script>
+
 </body>
 </html>
